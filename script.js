@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Trello Style
-// @namespace    http://madnh.com/
+// @namespace    https://github.com/madnh/Trello-background-script
 // @version      0.1
-// @description  Ahihi Trello
+// @description  Change the Trello background image
 // @author       MaDnh
 // @match        https://trello.com/*
 // @grant        none
