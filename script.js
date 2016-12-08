@@ -37,7 +37,7 @@
 
     function do_change(url) {
         document.body.style.background = "url(" + url + ") no-repeat center center fixed";
-        document.body.style.backgroundSize = 'cover'
+        document.body.style.backgroundSize = 'cover';
     }
 
     function randomBackground() {
@@ -48,17 +48,20 @@
         do_change(randomBackground());
     }
 
-    function loop() {
+    function loop(every) {
         if(time_interval){
             clearInterval(time_interval);
         }
 
-        time_interval = setInterval(action, 15 * 3600 * 1000);
+        time_interval = setInterval(action, every || (15 * 3600 * 1000));
     }
 
-    window.changeBg = function () {
+    window.changeBg = function (every) {
         action();
-        loop();
+        loop(every);
+    };
+    window.addBg = function (url) {
+        backgrounds.push(url);
     };
 
     action();
