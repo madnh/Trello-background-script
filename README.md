@@ -10,7 +10,7 @@ User script that change the Trello Background image
 2. Use Chome's plugin: [`Tampermonkey`](http://tampermonkey.net/)
 
 ### Note:
-The background will auto change background every 15 minutes :kissing_smiling_eyes:
+The background will auto change every 15 minutes :kissing_smiling_eyes:
 
 # Methods
 - **changeBg(_time_interval_millisecond_)**: manual change the background. If `time_interval_millisecond` not special, 15 minutes is used
